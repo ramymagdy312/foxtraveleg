@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Hurghada",
+    "address": "Red Sea, Egypt"
+  },
+  {
+    "id": 2,
+    "name": "Marsa Alam",
+    "address": "Red Sea, Egypt"
+  },
+  {
+    "id": 3,
+    "name": "Cairo",
+    "address": "Cairo, Egypt"
+  },
+  {
+    "id": 4,
+    "name": "Dahab",
+    "address": "Sharm, Egypt"
+  },
+  {
+    "id": 5,
+    "name": "Elsokhna",
+    "address": "Red Sea, Egypt"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "city_name": "Hurghada",
+    "city_code": "HRG",
+    "hotels": [
+      {
+        "id": 1,
+        "hotel_name": "Grand Hotel",
+        "hotel_code": "HRG_GH"
+      },
+      {
+        "id": 2,
+        "hotel_name": "Azura",
+        "hotel_code": "HRG_AZR"
+      },
+      {
+        "id": 3,
+        "hotel_name": "Florenza 50",
+        "hotel_code": "HRG_FRZ"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "city_name": "Marsa Alam",
+    "city_code": "MRS",
+    "hotels": [
+      {
+        "id": 1,
+        "hotel_name": "Solymar Reef Marsa",
+        "hotel_code": "MRS_SRM"
+      },
+      {
+        "id": 2,
+        "hotel_name": "Jaz Maraya",
+        "hotel_code": "MRS_JM"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "city_name": "Alexandria",
+    "city_code": "ALX",
+    "hotels": [
+      {
+        "id": 1,
+        "hotel_name": "Borg El Arab Beach Hotel",
+        "hotel_code": "ALX_BEB"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "city_name": "Dahab",
+    "city_code": "DHB",
+    "hotels": [
+      {
+        "id": 1,
+        "hotel_name": "Jaz Dahabeya",
+        "hotel_code": "DHB_JB"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "city_name": "Sharm El Sheikh",
+    "city_code": "SHM",
+    "hotels": [
+      {
+        "id": 1,
+        "hotel_name": "Fayrouz Resort",
+        "hotel_code": "SHM_FR"
+      },
+      {
+        "id": 2,
+        "hotel_name": "Iberotel Palace",
+        "hotel_code": "SHM_IP"
+      }
+    ]
+  }
+]

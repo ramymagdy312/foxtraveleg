@@ -1,0 +1,45 @@
+.homeHero {
+  height: 100vh;
+  position: relative;
+}
+
+.homeHero_bg {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.logo {
+  max-width: 20vw;
+}
+
+.homeHero_bg::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(5, 16, 54, 0.5), #051036 72.43%);
+  opacity: 0.85;
+}
+
+.featuredHeroBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 2;
+}
+
+.heroTitle {
+  text-transform: capitalize;
+  font-size: 4.2rem;
+  font-weight: 650;
+}
+
+.heroDescription {
+  text-align: center;
+}

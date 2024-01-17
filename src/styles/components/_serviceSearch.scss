@@ -1,0 +1,171 @@
+.serviceSearch {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+// =================  categories options  ================= //
+.serviceSearch_categories {
+  display: flex;
+  gap: 15px;
+
+  .category {
+    background-color: transparent;
+    border-color: transparent;
+    outline: none;
+    color: #fff;
+    padding: 10px 15px;
+  }
+
+  .category.active,
+  .category:hover {
+    border-bottom: 2px solid;
+  }
+}
+
+// =================  form wrapper  ================= //
+.serviceSearch_form {
+  background-color: #fff;
+  border-radius: 100px;
+  position: relative;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: max-content;
+}
+
+.serviceSearch_controller {
+  padding-inline: 30px;
+  flex-shrink: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.serviceSearch_controller + .serviceSearch_controller {
+  border-left: 1px solid gray;
+}
+
+// =================  DateInput  ================= //
+.custom_dual_datepicker {
+  color: gray;
+  line-height: 1.6;
+  font-size: 15px;
+}
+.custom_input-picker {
+  padding: 0;
+  margin: 0;
+  color: gray;
+  line-height: 1.6;
+  font-size: 14px;
+  border: 0;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+  &:focus {
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.custom_container-picker {
+  display: flex !important;
+}
+
+// =================  Guest Input  ================= //
+.guestInput_wrapper {
+  position: relative;
+}
+
+.guestInput_counters {
+  padding: 0.2rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.numberInput {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  .count {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  button {
+    border: 1px solid blue;
+    font-weight: 500;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+  }
+
+  button:hover {
+    background-color: blue;
+    color: #fff;
+  }
+}
+
+// =================  HotelLocation  ================= //
+.hotelLocation_input {
+  border: none;
+  outline: none;
+}
+
+.hotelLocations_optionsList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-inline-start: 0;
+  padding: 0 5px;
+  margin-bottom: 0;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 2px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: gray;
+  }
+
+  li:hover,
+  li.active {
+    background-color: #ffc107;
+    color: #fff;
+  }
+
+  .icon {
+    font-size: 1.3rem;
+    color: inherit;
+  }
+  .locationAddress {
+    font-size: 0.5rem;
+  }
+}
+
+// =================  Submit Button  ================= //
+.serviceSearch_submitBtn {
+  border: none;
+  background-color: blue;
+  border-radius: 100px;
+  //   height: 60px;
+  padding-inline: 35px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 15px;
+}

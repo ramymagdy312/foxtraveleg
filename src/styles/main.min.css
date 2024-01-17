@@ -1,0 +1,238 @@
+.modalBackground {
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.modalBody {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  max-height: 90vh;
+  transition: 4s max-height ease-in-out;
+  overflow: auto;
+  width: 60%;
+  border-radius: 5px;
+}
+
+.serviceSearch {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.serviceSearch_categories {
+  display: flex;
+  gap: 15px;
+}
+
+.serviceSearch_categories .category {
+  background-color: transparent;
+  border-color: transparent;
+  outline: none;
+  color: #fff;
+  padding: 10px 15px;
+}
+
+.serviceSearch_categories .category.active,
+.serviceSearch_categories .category:hover {
+  border-bottom: 2px solid;
+}
+
+.serviceSearch_form {
+  background-color: #fff;
+  border-radius: 100px;
+  position: relative;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: max-content;
+}
+
+.serviceSearch_controller {
+  padding-inline: 30px;
+  flex-shrink: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.serviceSearch_controller + .serviceSearch_controller {
+  border-left: 1px solid gray;
+}
+
+.custom_dual_datepicker {
+  color: gray;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.custom_input-picker {
+  padding: 0;
+  margin: 0;
+  color: gray;
+  line-height: 1.6;
+  font-size: 14px;
+  border: 0;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+}
+
+.custom_input-picker:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.custom_container-picker {
+  display: flex !important;
+}
+
+.guestInput_wrapper {
+  position: relative;
+}
+
+.guestInput_counters {
+  padding: 0.2rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.numberInput {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.numberInput .count {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.numberInput button {
+  border: 1px solid blue;
+  font-weight: 500;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+
+.numberInput button:hover {
+  background-color: blue;
+  color: #fff;
+}
+
+.hotelLocation_input {
+  border: none;
+  outline: none;
+}
+
+.hotelLocations_optionsList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-inline-start: 0;
+  padding: 0 5px;
+  margin-bottom: 0;
+}
+
+.hotelLocations_optionsList li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: gray;
+}
+
+.hotelLocations_optionsList li:hover,
+.hotelLocations_optionsList li.active {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.hotelLocations_optionsList .icon {
+  font-size: 1.3rem;
+  color: inherit;
+}
+
+.hotelLocations_optionsList .locationAddress {
+  font-size: 0.5rem;
+}
+
+.serviceSearch_submitBtn {
+  border: none;
+  background-color: blue;
+  border-radius: 100px;
+  padding-inline: 35px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 15px;
+}
+
+.homeHero {
+  height: 100vh;
+  position: relative;
+}
+
+.homeHero_bg {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.logo {
+  max-width: 20vw;
+}
+
+.homeHero_bg::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(5, 16, 54, 0.5), #051036 72.43%);
+  opacity: 0.85;
+}
+
+.featuredHeroBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 2;
+}
+
+.heroTitle {
+  text-transform: capitalize;
+  font-size: 4.2rem;
+  font-weight: 650;
+}
+
+.heroDescription {
+  text-align: center;
+}

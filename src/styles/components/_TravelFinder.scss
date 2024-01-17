@@ -1,0 +1,318 @@
+@use "../abstracts/variables" as v;
+@use "../mixins/mediaQuery" as mixins;
+
+// ======================================================= //
+// ================  start input summary  ================ //
+// ======================================================= //
+// ===================  mobile styles  =================== //
+
+.travel_finder {
+  background-color: #fff;
+}
+
+.travel_finder .input_summary {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  box-shadow: v.$box_shadow;
+  transition: v.$transition;
+  cursor: pointer;
+}
+
+.travel_finder .input_summary:hover {
+  background-color: rgb(241, 241, 241);
+}
+
+.travel_finder .input_summary-icon {
+  color: v.$main_color;
+  font-size: 1.5rem;
+  width: 60px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.travel_finder .input_summary-title {
+  color: gray;
+}
+
+.travel_finder .input_summary-data {
+  font-weight: bold;
+}
+
+.travel_finder .input_summary + .travel_finder .input_summary {
+  margin-top: 12px;
+}
+
+.travel_finder-submit {
+  padding: 0;
+  margin-top: 12px;
+}
+.travel_finder-submit button {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: v.$main_color;
+  color: #fff;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+// ===================  large screens styles  =================== //
+@include mixins.media-query(large) {
+  .travel_finder {
+    display: flex;
+    box-shadow: v.$box_shadow;
+  }
+
+  .travel_finder .input_summary {
+    box-shadow: none;
+    width: calc(90% / 4);
+  }
+
+  .travel_finder .input_summary + .travel_finder .input_summary {
+    margin-top: 0;
+    border-left: 1px solid rgb(231, 231, 231);
+  }
+
+  .travel_finder-submit {
+    width: 10%;
+    margin-top: 0;
+  }
+}
+
+// ======================================================= //
+// =================  end input summary  ================= //
+// ======================================================= //
+
+// ======================================================= //
+// =================  start input forms  ================= //
+// ======================================================= //
+// ===================  mobile styles  =================== //
+.tf_input_form {
+  padding: 10px;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  padding-bottom: 10%;
+}
+
+.tf_input_form-header {
+  padding: 10px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+  margin: -10px -10px 5px;
+
+  .title {
+    font-weight: bold;
+  }
+}
+
+.tf_input_form-body {
+  padding: 5px;
+}
+
+.tf_input_form-footer {
+  background-color: rgb(231, 231, 231);
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  // height: 10%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+// ================  DESTINATIONS INPUT  ================ //
+.tf_input_form.destinations {
+  .city_block_list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .city_options_block {
+    width: calc(100% / 2);
+    position: relative;
+  }
+
+  .options_toggler {
+    position: absolute;
+    right: 20px;
+    top: -5px;
+    font-size: 1.5rem;
+    color: v.$main_color;
+    transition: v.$transition;
+    cursor: pointer;
+  }
+
+  .options_toggler:hover {
+    transform: scale(1.1);
+  }
+
+  .dest_option {
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+  }
+
+  .dest_option.city {
+    font-weight: bold;
+  }
+
+  .dest_option.hotel {
+    margin-left: 20px;
+    color: v.$mute_color;
+  }
+}
+
+// ================  TRAVELLERS INPUT  ================ //
+.tf_input_form.travellers {
+  // padding: 0;
+}
+
+.travellers_room_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.traveller_room {
+  width: 100%;
+  padding: 10px;
+}
+
+.traveller_room_title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.traveller_room_title h6 {
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+.traveller_room_title span {
+  width: 100%;
+  border: 1px solid rgb(211, 211, 211);
+}
+
+.rooms_quantity {
+  border-top: 1px solid rgb(211, 211, 211);
+  border-bottom: 1px solid rgb(211, 211, 211);
+  width: 100%;
+  display: flex;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.rooms_quantity .qty_option {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  // font-weight: bold;
+  transition: v.$transition;
+  cursor: pointer;
+
+  &.active {
+    cursor: default;
+  }
+
+  &.active,
+  &:hover {
+    background-color: v.$main_color;
+    color: #fff;
+  }
+}
+
+.traveller_room .counters_list {
+  display: flex;
+  gap: 10px;
+}
+
+.traveller_room .counter .title {
+  margin-bottom: 5px;
+  color: v.$mute_color;
+}
+
+.tf_room_childs_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tf_room_child {
+  width: calc(50%);
+  padding: 5px;
+
+  .title {
+    color: v.$mute_color;
+    margin-bottom: 5px;
+  }
+}
+
+// ================  DATES INPUT  ================ //
+.tf_input_form.dates {
+  .choosen_date_list {
+    display: flex;
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 20px;
+  }
+
+  .choosen_date {
+    margin-right: 20px;
+    padding: 5px 10px;
+    border: 1px solid #c9c9c9;
+    border-left: 6px solid v.$main_color;
+    border-top-left-radius: 5px;
+    cursor: pointer;
+
+    .title {
+      color: v.$mute_color;
+    }
+
+    .date {
+      color: v.$main_color;
+      font-weight: bold;
+    }
+  }
+}
+
+// ===================  large screens styles  =================== //
+@include mixins.media-query(large) {
+  .travel_finder_placeholder {
+    margin-top: -20px;
+  }
+
+  .tf_input_form {
+    width: max-content;
+    height: initial;
+  }
+
+  .tf_input_form.destinations {
+    width: max(40vh, 1000px);
+    .city_options_block {
+      width: calc(100% / 4);
+    }
+  }
+
+  .tf_input_form.travellers {
+    width: max(40vh, 1000px);
+    .traveller_room {
+      width: 50%;
+    }
+
+    .rooms_quantity .qty_option {
+      font-weight: bold;
+    }
+  }
+
+  .tf_input_form.promocode {
+    width: max(40vh, 1000px);
+  }
+}

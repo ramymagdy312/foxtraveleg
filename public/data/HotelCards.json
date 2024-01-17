@@ -1,0 +1,85 @@
+[
+  {
+    "id": 1,
+    "images": ["https://gotrip-appdir.vercel.app/img/hotels/1.png"],
+    "title": "The Montcalm At Brewery London City",
+    "address": "Westminster Borough, London",
+    "rating": 4.7,
+    "reviews": 3014,
+    "price": 72,
+    "priceCurrency": "usd",
+    "badges": [
+      {
+        "id": 1,
+        "badgeType": 4,
+        "badgeTitle": "breakfast included"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "images": [
+      "https://gotrip-appdir.vercel.app/img/hotels/2.png",
+      "https://gotrip-appdir.vercel.app/img/gallery/1/2.png",
+      "https://gotrip-appdir.vercel.app/img/gallery/1/4.png"
+    ],
+    "title": "staycity apart hotels deptford bridge station",
+    "address": "ciutat vella, barcellona",
+    "rating": 4.8,
+    "reviews": 2345,
+    "price": 85,
+    "priceCurrency": "usd",
+    "badges": []
+  },
+  {
+    "id": 3,
+    "images": ["https://gotrip-appdir.vercel.app/img/hotels/3.png"],
+    "title": "the westin new york at times sqaure west",
+    "address": "manhattan, new york",
+    "rating": 4.7,
+    "reviews": 3014,
+    "price": 68,
+    "priceCurrency": "usd",
+    "badges": [
+      {
+        "id": 1,
+        "badgeType": 1,
+        "badgeTitle": "best seller"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "images": ["https://gotrip-appdir.vercel.app/img/hotels/3.png"],
+    "title": "double tree by hilton hotel new york times square west",
+    "address": "vaticano parti, rome",
+    "rating": 4.5,
+    "reviews": 5633,
+    "price": 89,
+    "priceCurrency": "usd",
+    "badges": [
+      {
+        "id": 1,
+        "badgeType": 2,
+        "badgeTitle": "top rated"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "images": ["https://gotrip-appdir.vercel.app/img/hotels/1.png"],
+    "title": "The Montcalm At Brewery London City",
+    "address": "Westminster Borough, London",
+    "rating": 4.7,
+    "reviews": 3014,
+    "price": 99,
+    "priceCurrency": "usd",
+    "badges": [
+      {
+        "id": 1,
+        "badgeType": 3,
+        "badgeTitle": "-25% today"
+      }
+    ]
+  }
+]
