@@ -30,15 +30,26 @@ const customStyles: Modal.Styles = {
 const ServiceSearch = () => {
   const [formIsShown, setFormIsShown] = useState(false);
   const [hotelLocation, setHotelLocation] = useState("");
-  const [hotelGuests, setHotelGuests] = useState({ adults: 2, childs: 1, rooms: 1 });
-  const [checkInOut, setCheckInOut] = useState<Date[]>([new Date(), new Date()]);
+  const [hotelGuests, setHotelGuests] = useState({
+    adults: 2,
+    childs: 1,
+    rooms: 1,
+  });
+  const [checkInOut, setCheckInOut] = useState<Date[]>([
+    new Date(),
+    new Date(),
+  ]);
   const [activeCategory, setActiveCategory] = useState("Hotel");
 
   const onCheckCheckoutChange = (newDates: Date[]) => {
     setCheckInOut(newDates);
   };
 
-  const onGuestsChange = (newGuests: { adults: number; childs: number; rooms: number }) => {
+  const onGuestsChange = (newGuests: {
+    adults: number;
+    childs: number;
+    rooms: number;
+  }) => {
     setHotelGuests(newGuests);
   };
 
@@ -82,12 +93,19 @@ const ServiceSearch = () => {
           </button>
         </form>
       </div>
-      <Modal isOpen={formIsShown} onRequestClose={() => setFormIsShown(false)} style={customStyles}>
+      <Modal
+        isOpen={formIsShown}
+        onRequestClose={() => setFormIsShown(false)}
+        style={customStyles}
+      >
         <ServiceRequestForm
           query={{
             ...hotelGuests,
             location: hotelLocation,
-            dates: [checkInOut[0].toLocaleString(), checkInOut[1]?.toLocaleString()],
+            dates: [
+              checkInOut[0].toLocaleString(),
+              checkInOut[1]?.toLocaleString(),
+            ],
           }}
         />
       </Modal>

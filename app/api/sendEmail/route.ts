@@ -17,7 +17,7 @@ export async function POST(req: any, res: NextApiResponse) {
 
     const mailOptions = {
       from: "rocket.hurghada@gmail.com",
-      to: "abdelghani.rts@gmail.com",
+      to: "samarelkady@foxtraveleg.com",
       subject: "New sales request",
       text: `
         name: ${data.name}

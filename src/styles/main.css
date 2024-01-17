@@ -52,23 +52,33 @@
 
 .serviceSearch_form {
   background-color: #fff;
-  border-radius: 100px;
+  border-radius: 20px;
+  gap: 10px;
   position: relative;
   padding: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  width: max-content;
 }
 
+@media screen and (min-width: 991px) {
+  .serviceSearch_form {
+    border-radius: 100px;
+    flex-direction: row;
+  }
+  .serviceSearch_controller {
+    padding-inline: 30px;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .serviceSearch_controller + .serviceSearch_controller {
+    border-left: 1px solid gray;
+  }
+}
 .serviceSearch_controller {
   padding-inline: 30px;
   flex-shrink: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.serviceSearch_controller + .serviceSearch_controller {
-  border-left: 1px solid gray;
 }
 
 .custom_dual_datepicker {
@@ -184,6 +194,7 @@
   border: none;
   background-color: blue;
   border-radius: 100px;
+  min-height: 40px;
   padding-inline: 35px;
   color: #fff;
   font-weight: 500;
@@ -203,9 +214,14 @@
 }
 
 .logo {
-  max-width: 20vw;
+  max-width: 60vw;
 }
 
+@media screen and (min-width: 991px) {
+  .logo {
+    max-width: 20vw;
+  }
+}
 .homeHero_bg::after {
   content: "";
   position: absolute;
@@ -225,14 +241,24 @@
   transform: translate(-50%, -50%);
   color: #fff;
   z-index: 2;
+  width: 90vw;
 }
 
 .heroTitle {
   text-transform: capitalize;
-  font-size: 4.2rem;
+  font-size: 2.5rem;
   font-weight: 650;
 }
 
+@media screen and (min-width: 991px) {
+  .featuredHeroBox {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .heroTitle {
+    font-size: 4.5rem;
+  }
+}
 .heroDescription {
   text-align: center;
-}
+}/*# sourceMappingURL=main.css.map */
