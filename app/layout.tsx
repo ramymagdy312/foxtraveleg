@@ -14,12 +14,15 @@ import { useEffect } from "react";
 //   description: "Powered by RTS",
 // };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   useEffect(() => {
     AOS.init({
-      offset: 0,
+      offset: -10,
       duration: 600,
       easing: "ease-in-out",
+      once: true,
     });
   }, []);
 
