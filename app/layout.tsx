@@ -19,7 +19,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   useEffect(() => {
     AOS.init({
-      offset: -10,
+      offset: -50,
       duration: 600,
       easing: "ease-in-out",
       once: true,
