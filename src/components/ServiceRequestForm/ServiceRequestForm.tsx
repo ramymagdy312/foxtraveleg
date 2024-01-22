@@ -14,6 +14,7 @@ const ServiceRequestForm = (props: props) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
 
   const nameChangeHandler = (e: any) => {
     setName(e.target.value);
@@ -23,6 +24,9 @@ const ServiceRequestForm = (props: props) => {
   };
   const messageChangeHandler = (e: any) => {
     setMessage(e.target.value);
+  };
+  const phoneNumberChangeHandler = (e: any) => {
+    setPhoneNumber(e.target.value);
   };
 
   const sendEmail = async () => {
@@ -35,6 +39,7 @@ const ServiceRequestForm = (props: props) => {
         body: JSON.stringify({
           name: name,
           email: email,
+          phone: phoneNumber,
           message: message,
           adults: props.query.adults,
           childs: props.query.childs,
@@ -80,6 +85,16 @@ const ServiceRequestForm = (props: props) => {
           id="email"
           placeholder="name@example.com"
           onChange={emailChangeHandler}
+        />
+      </div>
+
+      <div className="mb-3">
+        <label className="form-label">Your phone number</label>
+        <input
+          type="text"
+          className="form-control"
+          placeholder="Please enter your phone number"
+          onChange={phoneNumberChangeHandler}
         />
       </div>
 

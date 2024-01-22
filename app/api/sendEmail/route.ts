@@ -22,7 +22,8 @@ export async function POST(req: any, res: NextApiResponse) {
       text: `
         name: ${data.name}
         email: ${data.email}
-        hotelLocation: ${data.location}
+        phone number: ${data.phone}
+        hotel location: ${data.location}
         guests: ${data.adults} adults - ${data.childs} childs - ${data.rooms} rooms
         checkin : ${data.checkin}
         checkout: ${data.checkout}
